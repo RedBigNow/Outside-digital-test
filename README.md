@@ -1,6 +1,6 @@
 # Тестовое задание Outside Digital (Vue.js)
 ## Demo:
-https://redbignow.github.io/outside-digital-test/dist/index.html
+https://redbignow.github.io/Outside-digital-test/dist/index.html
 
 ## Project setup
 ```
