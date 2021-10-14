@@ -1,16 +1,10 @@
 <template>
     <div class="wrapper">
         <div class="wrapper-content">
-
             <div class="hero-btn">
-                <button class="btn btn-default" @click="modalShow = !modalShow"><span>Налоговый вычет</span></button>
+                <button class="btn btn-default" @click="modalShow = !modalShow">Налоговый вычет</button>
             </div>
-
-            <modalTax 
-                v-show="modalShow"
-                @close="modalShow = false"/>
-
-            
+            <modalTax v-show="modalShow" @close="modalShow = false"/>
         </div>
     </div>
 </template>

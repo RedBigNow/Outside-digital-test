@@ -2,14 +2,10 @@
     width: 100%;
     padding: 16px 0;
     border-radius: 6px;
+    line-height: 24px;
+    font-weight: 500;
     cursor: pointer;
     transition: .3s;
-
-    span {
-        line-height: 24px;
-        font-weight: 500;
-        transition: .3s;
-    }
 
     &:disabled { 
         background: #BEC5CC;
@@ -22,30 +18,21 @@
 }
 
 .btn-default {
+    color: #fff;
     border: 1px solid #fff;
     background-color: transparent;
 
-    span {
-        color: #fff;
-    }
-
     &:hover {
+        color: #000;
         background-color: #fff;
-        
-        span {
-            color: #000;
-        }
     }
 }
 
 .btn-gradient {
+    color: #fff;
     border: none;
     background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
     box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
-
-    span {
-        color: #fff;
-    }
 
     &:hover {
         background-color: #EA0029;

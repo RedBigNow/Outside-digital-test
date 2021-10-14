@@ -1,8 +1,5 @@
 <template>
-    <modal
-        title="Налоговый вычет"
-        @close="$emit('close')"
-        >
+    <modal title="Налоговый вычет" @close="$emit('close')">
         <div slot="body">
             <div class="modal-text">
                 <p>Используйте налоговый вычет чтобы погасить ипотеку досрочно. Размер налогового вычета составляет не более 13% от своего официального годового дохода.</p>
@@ -52,7 +49,7 @@
                     </div>
                 </div>
 
-                <button :disabled="!successCalc" class="btn btn-gradient" @click="modalShow = !modalShow"><span>Добавить</span></button>
+                <button :disabled="!successCalc" class="btn btn-gradient" @click="modalShow = !modalShow">Добавить</button>
                 
             </form>
         </div>
@@ -134,8 +131,8 @@ export default {
                     // При каждой итерации цикла заносим новый год в массив
                     for (let i = 0; i < wholeYears; i++) {
                         fmtYear()
-                        id++
                         this.yearList.push({id: id, year: year, value : taxYear, money : taxYearMoney})
+                        id++
                         // На последней итерации заносим в массив остатки на последний год
                         if (id == allYears) {
                             fmtYear()
