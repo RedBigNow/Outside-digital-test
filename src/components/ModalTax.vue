@@ -38,13 +38,10 @@
                 <div class="modal-form__bottom">
                     <span class="small-title">Что уменьшаем?</span>
                     <div class="tag-list">
-                        <div class="tag-item tag-item--active">
-                            <label for="payment">Платёж</label>
-                            <input class="modal-form__radio" id="payment" name="decrease" type="radio" value="payment" checked>
-                        </div>
-                        <div class="tag-item">
-                            <label for="time">Срок</label>
-                            <input class="modal-form__radio" id="time" name="decrease" type="radio" value="time">
+                        <div class="tag-item" :class="{ 'tag-item--active': activeTag === tag.value }" v-for="(tag, id) in tags" :key="id" @click="activeTag = tag.value">
+                            <label :for="tag.value">{{ tag.label }}</label>
+                            <input class="modal-form__radio" :id="tag.value" name="decrease" type="radio" :value="tag.value" :checked="activeTag === tag.value">
+                            <p> {{tag.active}} </p>
                         </div>
                     </div>
                 </div>
@@ -79,7 +76,20 @@ export default {
             },
             successCalc: false,
             placeholderActive: true,
-            yearList: []
+            yearList: [],
+            tags: [
+                {
+                    id: 1,
+                    value: 'payment',
+                    label: 'Платёж'
+                },
+                {
+                    id: 2,
+                    value: 'time',
+                    label: 'Срок'
+                }
+            ],
+            activeTag: 'payment'
         }
     },
     methods: {
