@@ -1,4 +1,7 @@
-# Vue-cli template (Vue.js 3)
+# Тестовое задание Outside Digital (Vue.js 3)
+
+## Demo:
+https://redbignow.github.io/Outside-digital-test/dist/index.html
 
 ## Project setup
 
