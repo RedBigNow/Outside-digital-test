@@ -1,8 +1,7 @@
+const production = true
+
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? ''
-    : '/',
-  assetsDir: 'assets',
+  publicPath: production === true ? '' : '/',
   productionSourceMap: false,
-  filenameHashing: true
-}
+  assetsDir: "assets",
+};

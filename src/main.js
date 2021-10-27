@@ -1,17 +1,12 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
+import { store } from './store'
 import App from './App.vue'
-
-import Vuelidate from 'vuelidate'
-import money from 'v-money'
-
-//Plugins
-Vue.use(Vuelidate)
-Vue.use(money, {precision: 2})
+import money from 'v-money3'
 
 import './assets/scss/main.scss'
+const app = createApp(App)
 
-Vue.config.productionTip = false
+app.use(store)
+app.use(money)
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+app.mount('#app')

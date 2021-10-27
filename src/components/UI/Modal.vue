@@ -28,9 +28,7 @@ export default {
         document.body.addEventListener('keyup', e => {
             if (e.key === 'Escape') this.$emit('close')
         })
-    },
-    computed: {},
-    methods: {}
+    }
 }
 </script>
 

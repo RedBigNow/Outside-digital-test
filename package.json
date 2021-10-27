@@ -1,23 +1,25 @@
 {
   "name": "outside-digital-test",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vuelidate": "^0.7.6"
+    "@vuelidate/core": "^2.0.0-alpha.30",
+    "@vuelidate/validators": "^2.0.0-alpha.24",
+    "axios": "^0.23.0",
+    "core-js": "^3.18.3",
+    "v-money3": "^3.20.1",
+    "vue": "^3.2.20",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^10.2.0",
-    "v-money": "^0.8.1",
-    "vue-inputmask": "^0.2.1",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/cli-plugin-babel": "^4.5.14",
+    "@vue/cli-service": "^4.5.14",
+    "@vue/compiler-sfc": "^3.2.20",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2"
   }
 }
